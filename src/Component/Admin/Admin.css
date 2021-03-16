@@ -1,0 +1,136 @@
+/*admin login*/
+.adminLogin {
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+}
+.adminLogin > form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.adminLogin > form > input {
+  outline: none;
+  border: 1px solid lightgray;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.admin {
+  min-height: 80vh;
+  padding: 0px 10%;
+  display: flex;
+  background-color: #ff9d00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='72.6' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.adminDashboard {
+  flex: 1;
+  background-color: white;
+}
+.adminDashboard > div {
+  margin-top: 0px;
+}
+.adminDashboard > div > div:not(:nth-child(3)) {
+  padding: 20px 10%;
+}
+.adminDashboard > div > div > div {
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  color: white;
+  background-color: #348f6c;
+}
+.adminDashboard > div > div > div > h3 {
+  font-weight: 900;
+  font-size: 100px;
+  color: whitesmoke;
+  animation: h3-dance 1s 2s;
+}
+.adminDashboard > div > div > div > h2 {
+  color: white;
+}
+
+/*create product*/
+.createProduct {
+  flex: 1;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+.createProduct > form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.createProduct > form > input,
+.createProduct > form > select {
+  outline: none;
+  border: 1px solid lightgray;
+  margin: 10px 0px;
+  padding: 10px;
+}
+.createProduct > form > span {
+  color: red;
+}
+progress {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.spinner {
+  display: grid;
+  place-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr > td > img {
+  width: 50px;
+}
+.modal {
+  background-color: white;
+  width: 50%;
+  min-height: 50vh;
+  outline: none;
+  display: grid;
+  place-items: center;
+  padding: 10px 20px;
+}
+.modal > div {
+  text-align: center;
+}
+.modal > div > img {
+  width: 200px;
+}
+.modal > div > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modal > div > form > input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+.modal > div > form > button {
+  margin-top: 10px;
+}
+.spinner_load {
+  margin-top: 10px;
+}

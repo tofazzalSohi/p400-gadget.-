@@ -1,0 +1,13 @@
+.payment__method > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+.payment__method > div:nth-child(2) > div {
+  display: flex;
+  align-items: center;
+}
+.payment__method > div:nth-child(2) > div > .MuiSvgIcon-root {
+  background-color: orange !important;
+}

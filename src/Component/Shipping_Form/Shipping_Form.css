@@ -1,0 +1,28 @@
+.shipping__address > div > form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+}
+.shipping__address > div > form > input {
+  margin: 10px 0px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  outline: none;
+  border-radius: 2px;
+}
+.shipping__address > div > form > input:last-child {
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #f45508;
+}
+.shipping__address > div > form {
+  color: red;
+}
+.input_error {
+  border: 1px solid red !important;
+  background-color: rgba(240, 151, 151, 0.473);
+}

@@ -1,0 +1,91 @@
+.showProduct {
+  padding: 0% 12%;
+}
+.showProduct__top {
+  margin: 40px 0px;
+  text-transform: uppercase;
+}
+.showProduct__middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.showProduct__middle > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.bottom__pagination {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.product__categories {
+  margin: 25px 0px;
+  display: flex;
+  font-weight: bold;
+}
+.product__categories > div:nth-child(1) {
+  flex: 0.15;
+  flex-wrap: wrap;
+}
+.product__categories > div:nth-child(2) {
+  display: flex;
+  flex: 0.85;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product__categories > div:nth-child(2) > p {
+  padding: 5px 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Mui-selected {
+  color: white !important;
+  background-color: black !important;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: auto;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  margin: 20px 0px;
+}
+@media only screen and (max-width: 600px) {
+  .showProduct__middle {
+    display: block !important;
+    align-items: center;
+  }
+  .showProduct {
+    padding: 0% 5%;
+  }
+}

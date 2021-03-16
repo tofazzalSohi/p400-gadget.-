@@ -1,0 +1,60 @@
+.details {
+  padding: 30px 10%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+  place-items: center;
+  min-height: 80vh;
+}
+
+.details > div:nth-child(1) {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.details > div:nth-child(2) {
+  width: 100%;
+}
+.details > div > img {
+  object-fit: contain;
+  width: 200px;
+  transition: all 0.5s ease-in;
+}
+.details > div > img:hover {
+  object-fit: contain;
+  width: 300px;
+  cursor: pointer;
+}
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px 0px;
+}
+.features > div {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+.features > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.details button {
+  background-color: orange;
+  color: black;
+  font-weight: 700;
+}
+.details_Button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .details {
+    padding: 30px 10%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+  }
+}

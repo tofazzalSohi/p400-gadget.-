@@ -1,0 +1,46 @@
+.checkout {
+  padding: 50px 10%;
+  min-height: 80vh;
+}
+.checkout__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout__bottom > div {
+  margin-top: 30px;
+}
+.checkout__bottom > div > div {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 3px lightgray;
+  min-height: 400px;
+}
+.order__summary {
+  margin: 0px 20px;
+}
+
+.checkout__bottom > div > div > div:nth-child(1) > div {
+  background-color: #fb5607;
+  margin-right: 10px;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+}
+.checkout__bottom > div > div > div > div > .MuiSvgIcon-root {
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .checkout {
+    padding: 50px 1%;
+    min-height: 80vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+}

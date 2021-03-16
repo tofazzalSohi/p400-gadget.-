@@ -1,0 +1,64 @@
+.order__summary > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.orderSummary__cart {
+  display: grid;
+  grid-template-columns: 10% 75% 5% 10%;
+  background-color: white;
+  margin-top: 10px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  align-items: center;
+}
+.orderSummary__cart > img {
+  width: 100%;
+}
+.orderSummary__cart > small {
+  padding: 25px 10px;
+}
+.subTotal {
+  border-bottom: 1px solid #fb5607;
+  padding: 20px 0px;
+}
+.subTotal > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total_Amount {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+.confirmOrder__btn > .confirm_btn {
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #f45508;
+  border: none;
+  outline: none;
+}
+.confirmOrder__btn > button {
+  width: 100%;
+  padding: 10px;
+  cursor: not-allowed;
+}
+.paypal-button-label-container {
+  height: 20px;
+  min-height: 10px;
+  max-height: 20px;
+  width: 100px;
+}
+.paypal-button-color-gold {
+  background-color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+  .order__summary {
+    margin: 0px !important;
+  }
+}

@@ -1,0 +1,193 @@
+.topSelling__top {
+  text-align: center;
+  padding: 100px 0px;
+}
+.topSelling__top > h2 {
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+.topSelling__top > .topSelling_catagories {
+  margin-top: 20px;
+}
+.topSelling_catagories {
+  padding: 20px 0px;
+}
+.viewMore__btn {
+  margin: 0 auto !important;
+  color: red !important;
+}
+.topSelling_catagories > button {
+  background: none;
+  border: 0px;
+  font-size: 18px;
+  padding: 0% 5%;
+}
+.topSelling_catagories > button:not(.diff) {
+  border-right: 1px solid black;
+}
+.active::after {
+  content: "";
+  display: inline-block;
+  background: navy;
+  width: 100%;
+  height: 2px;
+}
+.topSelling__product__container {
+  padding: 10px 100px;
+}
+.topBrand {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: 600px;
+  gap: 2rem;
+  padding: 10px 10%;
+}
+.topBrand > div:nth-child(1) {
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.topBrand > div:nth-child(1) > .topBrand__caption {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.topBrand > div:nth-child(2) > div > .topBrand__caption {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.topBrand > div:nth-child(1):hover > img {
+  width: 45%;
+}
+.topBrand > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  grid-auto-rows: 290px;
+}
+.topBrand > div:nth-child(2) > div {
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.topBrand > div:nth-child(2) > div:hover > img {
+  width: 35%;
+}
+.topBrand > div:nth-child(1):hover > .topBrand__caption > .shopNow__btn {
+  display: inline-block;
+}
+.topBrand > div:nth-child(1):hover > .topBrand__caption > small {
+  display: none;
+}
+.topBrand
+  > div:nth-child(2)
+  > div:nth-child(1):hover
+  > .topBrand__caption
+  > .shopNow__btn {
+  display: inline-block;
+}
+.topBrand
+  > div:nth-child(2)
+  > div:nth-child(1):hover
+  > .topBrand__caption
+  > small {
+  display: none;
+}
+.topBrand
+  > div:nth-child(2)
+  > div:nth-child(2):hover
+  > .topBrand__caption
+  > .shopNow__btn {
+  display: inline-block;
+}
+.topBrand
+  > div:nth-child(2):hover
+  > div:nth-child(2):hover
+  > .topBrand__caption
+  > small {
+  display: none;
+}
+.topBrand > div:nth-child(1) > img {
+  transition: all 0.2s ease-out;
+  width: 39%;
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+}
+.topBrand > div:nth-child(2) > div > img {
+  width: 32%;
+  transition: all 0.2s ease-out;
+  position: relative;
+  top: 20%;
+  transform: translateY(-20%);
+}
+.shopNow__btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-top: 5px;
+  display: none;
+}
+.shopNow__btn:hover {
+  opacity: 0.7;
+}
+.topBrand__caption > small {
+  color: gray;
+}
+
+.topSelling_catagories > button {
+  position: relative;
+}
+.topSelling_catagories > button:hover::after {
+  content: "";
+  height: 1px;
+  left: 50%;
+  width: 10%;
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: #f5c400;
+  bottom: -5px;
+}
+.active_btn::after {
+  content: "";
+  height: 120%;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+  position: absolute;
+  border-bottom: 2px solid #f5c400;
+  bottom: -5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .topSelling__product__container {
+    padding: 10px 25px;
+  }
+  .topBrand {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 2rem;
+    padding: 10px 10%;
+  }
+  .topBrand > div {
+    z-index: 1;
+  }
+  .topBrand > div:nth-child(1) {
+    height: 300px;
+  }
+  .topBrand > div:nth-child(1) > .topBrand__caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,18 @@
+.slide > img {
+  width: 100% !important;
+  object-fit: fill;
+}
+.slider__container {
+  padding: 10px 10%;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 28px !important;
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+  color: lightgray;
+}
